@@ -32,6 +32,7 @@ module.exports = {
 
         channel.send(
             new MessageEmbed()
+                .setTitle('Announcment')
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ dynamic: true }))
                 .setDescription(args.slice(1).join(" "))
                 .setTimestamp()
